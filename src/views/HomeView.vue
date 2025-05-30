@@ -1,20 +1,9 @@
-<script setup>
-</script>
-
 <template>
-  <div class="home">
-     <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  </div>
-   
+  <fwb-alert type="success">
+    Success! You can now use Flowbite Vue in your Vue application 🎉
+  </fwb-alert>
 </template>
-<style>
-@media (min-width: 1024px) {
-  .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+
+<script setup>
+import { FwbAlert } from 'flowbite-vue'
+</script>
