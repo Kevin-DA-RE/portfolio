@@ -3,17 +3,18 @@ import {
   FwbNavbar,
   FwbNavbarCollapse,
   FwbNavbarLink,
-  FwbP
+  FwbHeading 
 } from 'flowbite-vue'
 
 import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <fwb-navbar>
+  <fwb-navbar class="h-15">
     <template #logo>
       <fwb-navbar-link>
-        <RouterLink to="/">Kevin DA RE</RouterLink>
+        <RouterLink to="/">
+          <fwb-heading tag="h5">Kevin DA RE</fwb-heading></RouterLink>
       </fwb-navbar-link>
     </template>
     <template #default="{isShowMenu}">
@@ -33,6 +34,8 @@ import { RouterView } from 'vue-router'
       </fwb-navbar-collapse>
     </template>
   </fwb-navbar>
-  <router-view />
-</template>
+  <div class="h-[calc(100vh-4.5rem)] bg-blue-500">
+    <router-view />
+  </div>
 
+</template>
