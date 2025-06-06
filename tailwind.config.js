@@ -1,16 +1,7 @@
-import flowbitePlugin from 'flowbite/plugin'
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
+import vue from "@vitejs/plugin-vue";
 
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js", // Pour que Vite scanne Flowbite
-    "./node_modules/flowbite-vue/**/*.{vue,js,ts}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    flowbitePlugin,
-  ],
-}
+export default defineConfig({
+  plugins: [tailwindcss(), vue()],
+});
