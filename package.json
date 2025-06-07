@@ -11,12 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
-<<<<<<< HEAD
-    "flowbite": "^3.1.2",
-    "flowbite-vue": "^0.2.1",
-=======
     "daisyui": "^5.0.43",
->>>>>>> daisy
     "tailwindcss": "^4.1.8",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
