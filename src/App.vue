@@ -7,7 +7,6 @@ import { RouterView } from 'vue-router'
 <template>
 <div class="navbar bg-base-100 shadow-sm">
   <div class="flex-1">
-    <a >daisyUI</a>
     <RouterLink class="btn btn-ghost text-xl" to="/">Kevin DA RE</RouterLink>
   </div>
       <RouterLink class="btn btn-ghost text-xl" to="/experience">Experience</RouterLink>
