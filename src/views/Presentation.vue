@@ -39,7 +39,7 @@ import { RouterLink } from 'vue-router'
               <legend>Télécharger mon CV</legend>
               <button class="btn btn-outline btn-info w-40">Cliquez ici</button>
             </fieldset>
-            <RouterLink class="btn btn-ghost text-xl" to="/projects">=> Mes projets</RouterLink>
+            <RouterLink class="btn btn-ghost text-xl" to="/project">=> Mes projets</RouterLink>
            </div>
         </div>
       </div>
