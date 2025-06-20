@@ -15,37 +15,38 @@ import { RouterLink } from 'vue-router'
 
     <!-- Contenu HTML centré -->
     <div class="absolute inset-0 flex items-center justify-center z-20">
-      <div class="flex flex-row items-center justify-between w-4/5 max-w-[1200px] mx-auto px-8">
+      <div class="flex flex-col lg:flex-row items-center justify-between w-11/12 max-w-[1200px] px-6 gap-y-10">
+
         <!-- Portrait -->
-       <div class="relative z-20 w-150 rounded-full animate-fade-in">
-          <img src="../assets/portrait.png" alt="" class="rounded-full">
+        <div class="w-40 h-40 rounded-full overflow-hidden animate-fade-in shrink-0">
+          <img src="../assets/portrait.png" alt="Portrait" class="w-full h-full object-cover rounded-full" />
         </div>
 
-        <!-- Texte et bouton -->
-        <div class="flex flex-col items-center justify-center text-white space-y-10 animate-fade-in">
-          <!-- Présentation texte sans bordure -->
-          <div class="text-center space-y-6 w-180">
-            <h1 class="text-4xl font-bold tracking-wide leading-tight">
+        <!-- Texte et boutons -->
+        <div class="flex flex-col items-center justify-center text-white space-y-10 text-center animate-fade-in max-w-xl">
+          <div class="space-y-6">
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-wide leading-tight">
               Bonjour et bienvenue !<br> Je m'appelle Kevin, Développeur Web Fullstack
             </h1>
-            <h2 class="text-xl font-medium tracking-wide leading-snug">
+            <h2 class="text-lg sm:text-xl font-medium tracking-wide leading-snug">
               Passionné par l'univers du développement web, laissez moi vous présenter mes projets et bien plus encore
             </h2>
           </div>
 
-          <!-- Bouton CV -->
-           <div class="flex flex-row justify-between items-center w-4/5">
-            <fieldset class="p-5 border-4 border-sky-700 rounded-lg shadow-md w-max text-lg">
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+            <fieldset class="p-4 border-4 border-sky-700 rounded-lg shadow-md text-lg">
               <legend>Télécharger mon CV</legend>
               <button class="btn btn-outline btn-info w-40">Cliquez ici</button>
             </fieldset>
-            <RouterLink class="btn btn-ghost text-xl" to="/project">=> Mes projets</RouterLink>
-           </div>
+            <RouterLink class="btn btn-ghost text-xl" to="/project">➡ Mes projets</RouterLink>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
 </template>
+
 
 
 
