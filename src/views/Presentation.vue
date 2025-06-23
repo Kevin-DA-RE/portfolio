@@ -18,12 +18,14 @@ import { RouterLink } from 'vue-router'
       <div class="flex flex-col lg:flex-row items-center justify-between w-11/12 max-w-[1200px] px-6 gap-y-10">
 
         <!-- Portrait -->
-        <div class="w-40 h-40 rounded-full overflow-hidden animate-fade-in shrink-0">
-          <img src="../assets/portrait.png" alt="Portrait" class="w-full h-full object-cover rounded-full" />
-        </div>
+        <div class="relative z-20 w-150 rounded-full animate-fade-in">
+          <img src="../assets/portrait.png" alt=""
+            class="rounded-full">
+          </div>
 
         <!-- Texte et boutons -->
-        <div class="flex flex-col items-center justify-center text-white space-y-10 text-center animate-fade-in max-w-xl">
+        <div
+          class="flex flex-col items-center justify-center text-white space-y-10 text-center animate-fade-in max-w-xl">
           <div class="space-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold tracking-wide leading-tight">
               Bonjour et bienvenue !<br> Je m'appelle Kevin, Développeur Web Fullstack
@@ -58,6 +60,7 @@ import { RouterLink } from 'vue-router'
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
