@@ -40,7 +40,7 @@ export default {
       period: '2013-2020',
       stacks: 'CATIA V5',
       description: 'Fabrication de pièces mécaniques à usage industriel, automobile, ferroviaire.',
-      url_img: 'public/experience/operator_milling_tools.png',
+      url_img: '/public/experience/operator_milling_tools.png',
       tasks: [
         "Analyse des plans de fabrication",
         'Programmation de machines à commande numérique',
