@@ -5,7 +5,7 @@ import data  from '../store/data'
 </script>
 
 <template>
-  <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical overflow-y-auto">
+  <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical overflow-y-auto animate-fade-in">
     <li
       v-for="(exp, index) in data.experience"
       :key="exp.id"
