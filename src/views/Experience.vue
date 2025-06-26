@@ -15,10 +15,9 @@ import data  from '../store/data'
         <time class="font-mono italic">{{ exp.period }}</time>
         <div class="text-lg font-black text-warning">{{ exp.function }}</div>
         <p class="decoration-sky-500">{{ exp.description }}</p>
+        <p class="text-sm font-bold mt-1 text-sky-400">Environnement : {{ exp.stacks }}</p>
 
-        <p v-if="exp.stacks" class="text-sm font-bold mt-1 text-sky-400">Stacks : {{ exp.stacks }}</p>
-
-        <ul v-if="exp.tasks" class="list-disc list-inside text-sm mt-2 space-y-1">
+        <ul class="list-disc list-inside text-sm mt-2 space-y-1 pt-3">
           <li v-for="(task, idx) in exp.tasks" :key="idx">{{ task }}</li>
         </ul>
       </div>
