@@ -53,4 +53,21 @@ export default {
       ]
     }
   ],
+  skill:[
+    {
+      id: 1,
+      name: 'Vuejs',
+      url_img: '/public/skill/logo_vue.png'
+    },
+    {
+      id: 2,
+      name: 'Laravel',
+      url_img: '/public/skill/logo_laravel.png'
+    },
+    {
+      id: 3,
+      name: 'Git',
+      url_img: '/public/skill/logo_git.png'
+    }
+  ]
 }
