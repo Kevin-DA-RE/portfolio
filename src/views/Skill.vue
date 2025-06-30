@@ -1,86 +1,83 @@
 <script setup>
-import data  from '../store/data'
+import data from '../store/data'
 </script>
 
 <template>
   <div class="min-h-full bg-accent-600 animate-fade-in">
     <h1 class="text-cyan-500 font-bold m-5">Compétences</h1>
-    <div class="flex flex-row flex-wrap justify-around">
-      <div
-        v-for="(skill, index) in data.skill"
-        class="relative w-24 h-max border border-cyan-500 rounded-lg overflow-hidden"
-      >
-        <img :src="skill.url_img" :alt="skill.name" class="w-full h-full object-cover rounded-lg p-2" />
-        <svg class="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-          <rect
-            x="1" y="1"
-            width="calc(100% - 2px)"
-            height="calc(100% - 2px)"
-            rx="8"
-            ry="8"
-            fill="none"
-            stroke="cyan"
-            stroke-width="2"
-            stroke-dasharray="180 180"
-            stroke-dashoffset="360"
-          >
-            <animate
-              attributeName="stroke-dashoffset"
-              from="360"
-              to="0"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </rect>
-        </svg>
+
+    <div class="flex-wrap justify-around min-h-screen">
+      <div class="flex flex-col h-full justify-around items-center md:flex-row">
+
+        <!-- Bloc compétences -->
+        <div
+          v-for="(skill, index) in data.skill"
+          :key="index"
+          class="flex flex-col items-center m-2 group">
+
+          <!-- Image + SVG + overlay titre -->
+          <div class="relative w-24 h-24 rounded-lg overflow-hidden">
+            <!-- Image -->
+            <img :src="skill.url_img" :alt="skill.name" class="w-full h-full object-cover rounded-lg p-2" />
+
+            <!-- Effet SVG lumineux -->
+            <svg
+              class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none">
+              <rect
+                x="2"
+                y="2"
+                width="96"
+                height="96"
+                rx="8"
+                ry="8"
+                fill="none"
+                stroke="cyan"
+                stroke-width="2"
+                class="animate-dash" />
+            </svg>
+
+            <!-- Overlay titre (grands écrans uniquement) -->
+            <div
+              class="hidden md:flex absolute inset-0 items-center justify-center bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20">
+              <h2 class="text-cyan-300 text-lg font-semibold text-center opacity-80 tracking-wide">
+                {{ skill.name }}
+              </h2>
+            </div>
+          </div>
+
+          <!-- Titre pour petits écrans (sous l'image) -->
+          <div class="md:hidden mt-2">
+            <h2 class="text-cyan-500 text-sm font-semibold text-center tracking-wide">
+              {{ skill.name }}
+            </h2>
+          </div>
+
+        </div>
       </div>
-    </div>    
+    </div>
   </div>
 </template>
 
 
-
-
-
-
 <style>
-.glowing-circuit {
-  position: relative;
-  border: 3px solid transparent;
-  border-radius: 0.5rem;
-  background-clip: padding-box;
-  z-index: 1;
-}
-
-.glowing-circuit::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 0.5rem;
-  padding: 3px;
-  background: linear-gradient(0deg, 
-    transparent 0%, 
-    cyan 50%, 
-    transparent 100%);
-  border: 3px solid transparent;
-  background-size: 200% 200%;
-  animation: circuitFlow 2s linear infinite;
-  z-index: 2;
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  pointer-events: none;
-  box-sizing: border-box;
-}
-
-@keyframes circuitFlow {
+@keyframes dash-loop {
   0% {
-    background-position: 200% 0;
+    stroke-dashoffset: 0;
   }
+
   100% {
-    background-position: -200% 0;
+    stroke-dashoffset: -800;
   }
 }
 
+.animate-dash {
+  stroke: cyan;
+  stroke-width: 2;
+  stroke-dasharray: 50 150;
+  stroke-dashoffset: 0;
+  animation: dash-loop 4s linear infinite;
+  filter: drop-shadow(0 0 6px cyan);
+}
 </style>
