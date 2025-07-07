@@ -6,7 +6,7 @@ import CardProject from '@/components/card_project.vue';
 <template>
 <div class="carousel w-full h-full">
   <div id="slide1" class="carousel-item relative w-full">
-<CardProject />
+    <CardProject />
     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide4" class="btn btn-circle">❮</a>
       <a href="#slide2" class="btn btn-circle">❯</a>
