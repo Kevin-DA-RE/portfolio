@@ -69,5 +69,33 @@ export default {
       name: 'Git',
       url_img: '/public/skill/logo_git.png'
     }
+  ],
+  project: [
+    {
+      id: 1,
+      name: 'DavinciMedia',
+      description: 'Bibliotèque de medias avec connection à l\'API TMDB',
+      url_img: '/project/davincimedia.jpeg',
+      stacks: ['Vuejs', 'Laravel', 'Git'],
+      img_stack: [
+        '/skill/logo_vue.png',
+        '/skill/logo_laravel.png',
+      ],
+      img_stack_alt: ['Vuejs', 'Laravel', 'Git'],
+      url_github: 'https://github.com/Kevin-DA-RE/davincimedia'
+    },
+    {
+      id: 2,
+      name: 'Yu-Gi-Oh Card Manager',
+      description: 'Createur de cartes personnalisés pour le jeu Yu-Gi-Oh',
+      url_img: '/project/yugioh-card-maker.png',
+      stacks: ['Vuejs', 'Laravel', 'Git'],
+      img_stack: [
+        '/skill/logo_vue.png',
+        '/skill/logo_laravel.png',
+      ],
+      img_stack_alt: ['Vuejs', 'Laravel', 'Git'],
+      url_github: 'https://github.com/Kevin-DA-RE/yugioh-card-maker'
+    }
   ]
 }
