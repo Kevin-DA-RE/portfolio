@@ -76,26 +76,37 @@ export default {
       name: 'DavinciMedia',
       description: 'Bibliotèque de medias avec connection à l\'API TMDB',
       url_img: '/project/davincimedia.jpeg',
-      stacks: ['Vuejs', 'Laravel', 'Git'],
+      stacks: ['Vuejs', 'Laravel'],
       img_stack: [
         '/skill/logo_vue.png',
         '/skill/logo_laravel.png',
       ],
-      img_stack_alt: ['Vuejs', 'Laravel', 'Git'],
-      url_github: 'https://github.com/Kevin-DA-RE/davincimedia'
+      img_stack_alt: ['Vuejs', 'Laravel'],
+      url_github: 'https://github.com/Kevin-DA-RE/davincimedia',
+      descriptif: [
+        "Biblioteque regroupant tous les medias par compte utilisateur.",
+        "Chargement automatique des médias via l'import de l'application",
+        "Récupération des informations par media importé"
+      ]
     },
     {
       id: 2,
-      name: 'Yu-Gi-Oh Card Manager',
+      name: 'Yu-Gi-Oh Card Maker',
       description: 'Createur de cartes personnalisés pour le jeu Yu-Gi-Oh',
       url_img: '/project/yugioh-card-maker.png',
-      stacks: ['Vuejs', 'Laravel', 'Git'],
+      stacks: ['Vuejs', 'Laravel'],
       img_stack: [
         '/skill/logo_vue.png',
         '/skill/logo_laravel.png',
       ],
-      img_stack_alt: ['Vuejs', 'Laravel', 'Git'],
-      url_github: 'https://github.com/Kevin-DA-RE/yugioh-card-maker'
+      img_stack_alt: ['Vuejs', 'Laravel'],
+      url_github: 'https://github.com/Kevin-DA-RE/yugioh-card-maker',
+      descriptif: [
+        "Création de cartes personnnalisées inspirées du jeu Yu-Gi-Oh!",
+        "Creation de deck à partir des vraies cartes mais aussi celles crée par l'utilisateur",
+        "Partager vos créations sur vos réseaux afin de les faire découvrir à vos amis",
+        "Création de compte personnalies afin de sauvegarder vos créations",
+      ]
     }
   ]
 }
