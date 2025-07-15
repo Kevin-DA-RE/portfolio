@@ -85,8 +85,10 @@ export default {
       url_github: 'https://github.com/Kevin-DA-RE/davincimedia',
       descriptif: [
         "Biblioteque regroupant tous les medias par compte utilisateur.",
-        "Chargement automatique des médias via l'import de l'application",
-        "Récupération des informations par media importé"
+        "Gestion complete des medias par l'utilisateur",
+        "Récupération des informations par media importé",
+        "Recherche intuitive des medias par titre",
+        "Tri personnalisé des medias par catégorie",
       ]
     },
     {
@@ -104,8 +106,8 @@ export default {
       descriptif: [
         "Création de cartes personnnalisées inspirées du jeu Yu-Gi-Oh!",
         "Creation de deck à partir des vraies cartes mais aussi celles crée par l'utilisateur",
-        "Partager vos créations sur vos réseaux afin de les faire découvrir à vos amis",
-        "Création de compte personnalies afin de sauvegarder vos créations",
+        "Partage des créations sur les réseaux afin de les faire découvrir à des amis",
+        "Création de compte personnalies afin de sauvegarder les créations",
       ]
     }
   ]

@@ -10,7 +10,6 @@ const props = defineProps({
 </script>
 
 <template>
-  <div :id="`slide${index + 1}`" class="carousel-item relative w-full">
     <div class="flex flex-row content-center justify-around w-full h-full">
       <div class="flex flex-col justify-around h-150">
         <div class="text-center bg-base-100">
@@ -97,12 +96,11 @@ const props = defineProps({
           </li>
         </ul>
       </div>
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <div class="max-md:hidden absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a :href="`#slide${((index - 1 + total) % total) + 1}`" class="btn btn-circle">❮</a>
         <a :href="`#slide${((index + 1) % total) + 1}`" class="btn btn-circle">❯</a>
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped></style>
