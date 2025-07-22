@@ -73,7 +73,7 @@ export default {
   project: [
     {
       id: 1,
-      name: 'DavinciMedia',
+      name: 'DaVinciMedia',
       description: 'Bibliotèque de medias avec connection à l\'API TMDB',
       url_img: '/project/davincimedia.jpeg',
       stacks: ['Vuejs', 'Laravel'],

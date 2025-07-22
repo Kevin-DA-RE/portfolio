@@ -8,16 +8,16 @@ defineProps({
 
 <template>
   <div class="flex flex-row content-center justify-around w-full h-full">
-    <div class="flex flex-col justify-around h-150">
+    <div class="flex flex-col justify-around items-center h-full min-md:h-150">
       <div class="text-center bg-base-100">
         <h1 class="font-bold text-4xl text-cyan-400">{{ project.name }}</h1>
       </div>
       <figure>
-        <img :src="project.url_img" alt="Project Image" class="w-100 rounded-xl" />
+        <img :src="project.url_img" alt="Project Image" class="w-80 min-md:w-100 rounded-xl" />
       </figure>
     </div>
 
-    <div class="w-200 m-2 h-100 content-end">
+    <div class="max-sm:hidden w-200 m-2 h-100 content-end">
       <ul class="list bg-base-100 shadow-md">
         <li class="ml-4 text-xl text-sky-600 font-bold tracking-wide">Langage et Frameworks</li>
         <li class="list-row">
@@ -94,7 +94,7 @@ defineProps({
     </div>
 
     <!-- Boutons de navigation pour version desktop uniquement -->
-    <div class="max-md:hidden absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+    <div class="max-sm:hidden absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a :href="`#slide${((index - 1 + total) % total) + 1}`" class="btn btn-circle">❮</a>
       <a :href="`#slide${((index + 1) % total) + 1}`" class="btn btn-circle">❯</a>
     </div>

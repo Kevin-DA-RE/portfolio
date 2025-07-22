@@ -17,7 +17,7 @@ import data from '../store/data'
   </div>
 
   <!-- Version mobile verticale -->
-  <div class="min-md:hidden carousel carousel-vertical rounded-box h-96">
+  <div class="min-md:hidden carousel carousel-vertical rounded-box h-120 animate-fade-in ">
     <div
       class="carousel-item h-full"
       v-for="(project, index) in data.project"
