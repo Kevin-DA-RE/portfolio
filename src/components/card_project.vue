@@ -34,7 +34,7 @@ defineProps({
         </li>
       </ul>
 
-      <ul class="list bg-base-100 shadow-md">
+      <ul class="list bg-base-100 shadow-md" v-if="project.url_github">
         <li class="ml-4 text-xl text-sky-600 font-bold tracking-wide">Code source / site web</li>
         <li class="list-row">
           <div class="flex flex-row items-center justify-between px-4 py-2 w-50 ">

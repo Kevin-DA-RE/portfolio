@@ -93,21 +93,19 @@ export default {
     },
     {
       id: 2,
-      name: 'Yu-Gi-Oh Card Maker',
-      description: 'Createur de cartes personnalisés pour le jeu Yu-Gi-Oh',
-      url_img: '/project/yugioh-card-maker.png',
-      stacks: ['Vuejs', 'Laravel'],
+      name: 'API CAT',
+      description: 'Créations de fiches clients pour enquêtes de satisfaction via pltateforme web',
+      url_img: '/experience/web_developper.png',
+      stacks: ['Nodejs'],
       img_stack: [
-        '/skill/logo_vue.png',
-        '/skill/logo_laravel.png',
+        '/skill/logo_nodejs.png'
       ],
-      img_stack_alt: ['Vuejs', 'Laravel'],
-      url_github: 'https://github.com/Kevin-DA-RE/yugioh-card-maker',
+      img_stack_alt: ['Nodejs'],
       descriptif: [
-        "Création de cartes personnnalisées inspirées du jeu Yu-Gi-Oh!",
-        "Creation de deck à partir des vraies cartes mais aussi celles crée par l'utilisateur",
-        "Partage des créations sur les réseaux afin de les faire découvrir à des amis",
-        "Création de compte personnalies afin de sauvegarder les créations",
+        "Recuperation de fichiers csv",
+        "Creation de fiches clients en base de données pour les enquetes de satisfaction",
+        "Historisation des données",
+        "Déplacement des fichiers traites dans repertoire d'archives",
       ]
     }
   ]
