@@ -5,14 +5,14 @@ import data  from '../store/data'
 </script>
 
 <template>
-  <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical overflow-y-auto animate-fade-in">
+  <ul class="min-md:timeline timeline-snap-icon max-md:timeline-compact timeline-vertical overflow-y-auto animate-fade-in">
     <li
       v-for="(exp, index) in data.experience"
       :key="exp.id"
       class="mb-10 max-md:items-center max-md:text-center"
     >
       <!-- Point central -->
-      <div class="timeline-middle mb-6 max-md:hidden md:block">
+      <div class="min-md:timeline-middle mb-6 max-md:hidden md:block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
              fill="currentColor" class="h-5 w-5">
           <path fill-rule="evenodd"
@@ -48,8 +48,6 @@ import data  from '../store/data'
           <li v-for="(task, idx) in exp.tasks" :key="idx">{{ task }}</li>
         </ul>
       </div>
-
-      <hr />
     </li>
   </ul>
 </template>
