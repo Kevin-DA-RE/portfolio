@@ -4,9 +4,9 @@ import data from '../store/data'
 
 <template>
   <div class="min-h-full bg-accent-600 animate-fade-in">
-    <h1 class="text-cyan-500 font-bold m-5">Compétences</h1>
+    <h1 class="max-md:hidden text-cyan-500 font-bold m-5">Compétences</h1>
 
-    <div class="flex-wrap justify-around min-h-screen">
+    <div class="flex-wrap justify-around min-h-screen mt-10">
       <div class="flex flex-col h-full justify-around items-center md:flex-row">
 
         <!-- Bloc compétences -->
