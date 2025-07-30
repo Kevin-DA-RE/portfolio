@@ -15,18 +15,16 @@ import { RouterLink } from 'vue-router'
 
     <!-- Contenu HTML centré -->
     <div class="absolute inset-0 flex items-center justify-center z-20">
-      <div class="flex flex-col lg:flex-row items-center justify-between w-11/12 max-w-[1200px] px-6 gap-y-10">
+      <div class="flex flex-col lg:flex-row items-center justify-between w-11/12 max-w-[1200px] px-6">
 
         <!-- Portrait -->
-        <div class="relative z-20 w-150 rounded-full animate-fade-in">
-          <img src="../assets/portrait.png" alt=""
-            class="rounded-full">
-          </div>
+        <div class="max-md:w-50 max-md:h-50 w-150 rounded-full overflow-hidden animate-fade-in shrink-0">
+          <img src="../assets/portrait.png" alt="Portrait" class="object-cover rounded-full" />
+        </div>
 
         <!-- Texte et boutons -->
-        <div
-          class="flex flex-col items-center justify-center text-white space-y-10 text-center animate-fade-in max-w-xl">
-          <div class="space-y-6">
+        <div class="flex flex-col items-center justify-center text-white text-center animate-fade-in max-w-xl">
+          <div class="space-y-2">
             <h1 class="text-3xl sm:text-4xl font-bold tracking-wide leading-tight">
               Bonjour et bienvenue !<br> Je m'appelle Kevin, Développeur Web Fullstack
             </h1>
