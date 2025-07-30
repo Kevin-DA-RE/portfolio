@@ -108,7 +108,7 @@ const selectedTab = ref('projet')
       v-model="selectedTab"
       value="desc"
     />
-    <div class="tab-content border-base-300 bg-base-100 p-10  animate-fade-in " v-if="selectedTab === 'desc'">
+    <div class="tab-content border-base-300 bg-base-100 animate-fade-in " v-if="selectedTab === 'desc'">
       <li class="list-col p-4" v-for="(desc, index) in props.project.descriptif" :key="index" style="list-style-type: none;">
         <div class="text-md flex flex-row">
           <svg
