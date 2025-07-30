@@ -33,7 +33,7 @@ import { RouterLink } from 'vue-router'
             </h2>
           </div>
 
-          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full mt-5">
             <fieldset class="p-4 border-4 border-sky-700 rounded-lg shadow-md text-lg">
               <legend>Télécharger mon CV</legend>
               <button class="btn btn-outline btn-info w-40">Cliquez ici</button>
