@@ -15,7 +15,7 @@ import data from '../store/data'
       }"
     >
       <h1
-        class="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+        class="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] animate-fade-in"
       >
         {{ about.name }}
       </h1>
@@ -29,7 +29,7 @@ import data from '../store/data'
     >
       <input type="checkbox" />
       <div class="collapse-title font-semibold">
-        <h2>
+        <h2 class="text-xl font-bold text-cyan-500">
           {{ aboutDetails.title }}
         </h2>
         <!-- Effet SVG lumineux -->
@@ -52,8 +52,8 @@ import data from '../store/data'
           />
         </svg>
       </div>
-      <div class="collapse-content text-sm max-h-120 overflow-y-auto">
-        <p v-html="aboutDetails.descriptif.replace(/\n/g, '<br>')"></p>
+      <div class="bg-neutral-800 collapse-content text-sm max-h-[49vh] overflow-y-auto px-10">
+        <p class="font-bold text-lg text-jleft text-emerald-300" v-html="aboutDetails.descriptif.replace(/\n/g, '<br>')"></p>
       </div>
     </div>
   </div>

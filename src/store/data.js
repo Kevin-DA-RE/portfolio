@@ -125,44 +125,36 @@ export default {
       id: 1,
       title: 'Moi en quelques mots',
       descriptif: `Je suis une personne timide et reservé mais capable de travailler en équipe et collaborer
-        sur différents projet.
+        sur différents projets.
         J'aime apprendre de nouvelles choses et je suis toujours prêt à
-        relever de nouveaux défis. J'ai un esprit curieux et j'aime explorer de nouveaux domaines,
-        que ce soit dans le domaine professionnel ou personnel. J'ai toujours été passionné par
-        l'informatique c'est d'ailleurs pour cela que j'ai débuté ma carrière dans l'industrie dans
-        lequel j'ai développé des programmes pour fabriquer des pièces mécaniques puis j'ai effectué
-        une reconversion professionnelle dans le développement web afin de concevoir des
-        applications web modernes. 
-        L'idée de développer une ou plusieurs solutions sur un projet
-        afin de répondre à mes besoins me motive à me surpasser et à apprendre de nouvelles
-        compétences.
-        Je suis très investi quand il s'agit de relever des défis pour atteindre un
-        objectif. J'aime aussi partager mes connaissances et aider les autres à progresser quand
-        l'occasion se présente.`,
+        relever de nouveaux défis.
+        J'ai un esprit curieux et j'aime explorer de nouveaux domaines, que ce soit dans le domaine professionnel ou personnel.
+        J'ai toujours été passionné par l'informatique.
+        C'est d'ailleurs pour cela que j'ai débuté ma carrière dans l'industrie dans
+        lequel j'ai développé des programmes pour fabriquer des pièces mécaniques puis j'ai effectué une reconversion professionnelle dans le développement web afin de concevoir des applications web modernes. 
+        L'idée de développer une ou plusieurs solutions sur un projet afin de répondre à aux besoins clients me motive à me surpasser et à apprendre de nouvelles compétences.
+        Je suis très investi quand il s'agit de relever des défis pour atteindre un objectif. 
+        J'aime aussi partager mes connaissances et aider les autres à progresser quand l'occasion se présente.`,
     },
     {
       id: 2,
       title: 'Loisirs et passions',
-      descriptif: `En dehors du travail, j'aime beaucoup les jeux videos notamment les jeux de simulations. Ces
-        jeux m'aident à me projeter dans des rôles importants et m'apprennent à être stratégique et
-        réfléchi.
-        J'aime également regarder des séries et des films et j'ai meme un faible pour les
-        films d'horreur. 
-        J'écoute beaucoup de musique instumentale, cela m'aide à mévader et à me
-        concentrer. Etant père de famille, j'apprécie également passer du temps avec mon fils et ma
-        femme. 
+      descriptif: `En dehors du travail, j'aime beaucoup les jeux videos notamment les jeux de simulations.
+        Ces jeux m'aident à me projeter dans des rôles importants et m'apprennent à être stratégique et réfléchi.
+        J'aime également regarder des séries et des films et j'ai meme un faible pour les films d'horreur. 
+        J'écoute beaucoup de musique instumentale, cela m'aide à mévader et à me concentrer.
+        Etant père de famille, j'apprécie également passer du temps avec mon fils et ma femme. 
         J'aime beaucoup montrer à mon fils de nouveaux jeux et l'aider à progresser.
       `,
     },
     {
       id: 3,
       title: 'Caractère',
-      descriptif: `Je dirai que je suis une personne observatrice, calme et téméraire. Je suis très rigoureux
-        dans mon travail et j'aime que les choses soient bien faites. 
-        Je suis aussi quelqu'un qui à
-        de l'humour et j'aime faire rire les gens. Quelque soit mes tâches à effectuer, je suis
-        toujours investit et motivé dans ce que je fais. Enfin, meme si je suis timide, j'aime être
-        entouré de personnes et partager des moments conviviaux.`,
+      descriptif: `Je dirai que je suis une personne observatrice, calme et téméraire.
+        Je suis très rigoureux dans mon travail et j'aime que les choses soient bien faites.
+        Je suis aussi quelqu'un qui a de l'humour et aime faire rire les gens. 
+        Quelque soit mes tâches à effectuer, je suis toujours investit et motivé dans ce que je fais.
+        Enfin, meme si je suis timide, j'aime être entouré de personnes et partager des moments conviviaux.`,
     },
   ],
 }
