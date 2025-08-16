@@ -7,7 +7,7 @@ import data from '../store/data'
     <div
       v-for="(about, index) in data.about"
       :key="about.id"
-      class="flex m-2"
+      class="flex m-2 px-8"
       :class="{
         'items-start justify-start': index === 0,
         'items-center justify-center': index === 1,
@@ -29,12 +29,12 @@ import data from '../store/data'
     >
       <input type="checkbox" />
       <div class="collapse-title font-semibold">
-        <h2 class="text-xl font-bold text-cyan-500">
+        <h2 class="text-xl font-bold text-cyan-500 px-10 md:underline decoration-cyan-100">
           {{ aboutDetails.title }}
         </h2>
         <!-- Effet SVG lumineux -->
         <svg
-          class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none "
+          class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none md:hidden"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
@@ -48,7 +48,7 @@ import data from '../store/data'
             fill="none"
             stroke="cyan"
             stroke-width="2"
-            class="animate-dash md:hidden"
+            class="animate-dash"
           />
         </svg>
       </div>
