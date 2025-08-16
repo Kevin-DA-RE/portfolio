@@ -3,17 +3,31 @@ import data from '../store/data'
 </script>
 
 <template>
-  <div class="bg-cyan-600 flex flex-row justify-around">
-    <div class="" v-for="about in data.about" :key="about.id">
-      <h1 class="text-xl font-bold text-center text-white">{{ about.name }}</h1>
+  <div class="grid grid-rows-3">
+    <div
+      v-for="(about, index) in data.about"
+      :key="about.id"
+      class="flex m-2"
+      :class="{
+        'items-start justify-start': index === 0,
+        'items-center justify-center': index === 1,
+        'items-end justify-end': index === data.about.length - 1,
+      }"
+    >
+      <h1
+        class="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+      >
+        {{ about.name }}
+      </h1>
     </div>
   </div>
+
   <div>
     <div
       class="collapse bg-base-100 border border-base-300 animate-fade-in"
       v-for="aboutDetails in data.aboutDetails"
     >
-      <input type="checkbox"/>
+      <input type="checkbox" />
       <div class="collapse-title font-semibold">
         <h2>
           {{ aboutDetails.title }}
@@ -38,11 +52,9 @@ import data from '../store/data'
           />
         </svg>
       </div>
-      <div class="collapse-content text-sm ">
+      <div class="collapse-content text-sm max-h-120 overflow-y-auto">
         <p v-html="aboutDetails.descriptif.replace(/\n/g, '<br>')"></p>
       </div>
     </div>
   </div>
 </template>
-
-<style></style>
