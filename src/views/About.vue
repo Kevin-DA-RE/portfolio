@@ -24,7 +24,7 @@ import data from '../store/data'
 
   <div>
     <div
-      class="collapse bg-base-100 border border-base-300 animate-fade-in"
+      class="collapse bg-base-100 border border-base-300 animate-fade-in "
       v-for="aboutDetails in data.aboutDetails"
     >
       <input type="checkbox" />
@@ -34,7 +34,7 @@ import data from '../store/data'
         </h2>
         <!-- Effet SVG lumineux -->
         <svg
-          class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none"
+          class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none "
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
@@ -48,7 +48,7 @@ import data from '../store/data'
             fill="none"
             stroke="cyan"
             stroke-width="2"
-            class="animate-dash"
+            class="animate-dash md:hidden"
           />
         </svg>
       </div>
