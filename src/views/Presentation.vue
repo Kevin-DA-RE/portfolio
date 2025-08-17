@@ -38,7 +38,7 @@ import data from '../store/data'
           <div class="space-y-2">
             <h1 class="text-3xl sm:text-4xl font-bold tracking-wide leading-tight">
               Bonjour et bienvenue !<br />
-              Je m'appelle Kevin, Développeur Web Fullstack
+              Je m'appelle Kevin, <strong class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] ">Développeur Web Fullstack</strong>
             </h1>
             <h2 class="text-lg sm:text-xl font-medium tracking-wide leading-snug">
               Passionné par l'univers du développement web, laissez moi vous présenter mes projets
