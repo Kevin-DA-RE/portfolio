@@ -37,7 +37,11 @@ import data from '../store/data'
           <div class="space-y-2">
             <h1 class="text-3xl sm:text-4xl font-bold tracking-wide leading-tight">
               Bonjour et bienvenue !<br />
-              Je m'appelle Kevin, <strong class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] ">Développeur Web Fullstack</strong>
+              Je m'appelle Kevin,
+              <strong
+                class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+                >Développeur Web Fullstack</strong
+              >
             </h1>
             <h2 class="text-lg sm:text-xl font-medium tracking-wide leading-snug">
               Passionné par l'univers du développement web, laissez moi vous présenter mes projets
@@ -49,40 +53,46 @@ import data from '../store/data'
             class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full mt-5 hover:text-cyan-400 transition-colors"
             style="cursor: pointer"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-              />
-            </svg>
-            <a
-              href="https://drive.google.com/file/d/1GoCHIRn1JKEwBw0fQ7Q6ichFbWp0ru42/view?usp=sharing"
-              target="_blank"
-            >
-              Télécharger mon CV
-            </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
-              />
-            </svg>
+            <div class="flex flex-row items-center justify-center gap-2 w-full mt-5">
+              <!-- Flèche gauche -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 hover:stroke-cyan-400 transition-colors"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              <!-- Lien -->
+              <a
+                href="https://drive.google.com/file/d/1GoCHIRn1JKEwBw0fQ7Q6ichFbWp0ru42/view?usp=sharing"
+                target="_blank"
+                class="font-semibold hover:text-cyan-400 transition-colors"
+              >
+                Télécharger mon CV
+              </a>
+              <!-- Flèche droite -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 hover:stroke-cyan-400 transition-colors"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
+                />
+              </svg>
+            </div>
           </div>
           <fieldset class="mt-5 p-4 border-4 border-sky-700 rounded-lg shadow-md text-lg">
             <legend>Contact</legend>
