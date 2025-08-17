@@ -32,7 +32,6 @@ const closeMenu = () => menuOpen.value = false
         <RouterLink class="btn btn-ghost text-xl" to="/experience">Experiences</RouterLink>
         <RouterLink class="btn btn-ghost text-xl" to="/skill">Compétences</RouterLink>
         <RouterLink class="btn btn-ghost text-xl" to="/about">À propos</RouterLink>
-        <RouterLink class="btn btn-ghost text-xl" to="/contact">Contact</RouterLink>
       </div>
     </div>
 
@@ -42,7 +41,6 @@ const closeMenu = () => menuOpen.value = false
       <RouterLink class="btn btn-block" to="/experience" @click="closeMenu">Experiences</RouterLink>
       <RouterLink class="btn btn-block" to="/skill" @click="closeMenu">Compétences</RouterLink>
       <RouterLink class="btn btn-block" to="/about" @click="closeMenu">À propos</RouterLink>
-      <RouterLink class="btn btn-block" to="/contact" @click="closeMenu">Contact</RouterLink>
     </div>
 
     <!-- Contenu principal -->

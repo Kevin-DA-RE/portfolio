@@ -157,4 +157,9 @@ export default {
         Enfin, meme si je suis timide, j'aime être entouré de personnes et partager des moments conviviaux.`,
     },
   ],
+  contact:{
+    mail: `dare.kevin21000@gmail.com`,
+    phone: `06 50 06 02 81`,
+    localisation: `Dijon`,
+  }
 }

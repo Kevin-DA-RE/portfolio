@@ -3,7 +3,6 @@ import About from '../views/About.vue'
 import Presentation from '../views/Presentation.vue'
 import Experience from '../views/Experience.vue'
 import Skill from '../views/Skill.vue'
-import Contact from '../views/Contact.vue'
 import Project from '../views/Project.vue'
 
 const router = createRouter({
@@ -33,12 +32,7 @@ const router = createRouter({
       path: '/project',
       name: 'project',
       component: Project,
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: Contact,
-    },
+    }
   ],
 })
 
