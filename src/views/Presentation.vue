@@ -4,16 +4,7 @@ import data from '../store/data'
 
 <template>
   <div class="relative h-screen w-screen overflow-hidden">
-    <!-- Vidéo en arrière-plan -->
-    <video
-      class="absolute top-0 left-0 w-full h-full object-cover z-0"
-      autoplay
-      muted
-      loop
-      playsinline
-    >
-      <source src="../assets/wallpaper_blue.mp4" type="video/mp4" />
-    </video>
+
 
     <!-- Overlay sombre -->
     <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
