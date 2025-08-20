@@ -22,13 +22,13 @@ import data from '../store/data'
     </div>
   </div>
 
-  <div>
+  <div class="overflow-y-auto">
     <div
-      class="collapse bg-base-100 border border-base-300 animate-fade-in "
+      class="collapse bg-transparente animate-fade-in"
       v-for="aboutDetails in data.aboutDetails"
     >
       <input type="checkbox" />
-      <div class="collapse-title font-semibold">
+      <div class="collapse-title font-semibold w-fit relative">
         <h2 class="text-xl font-bold text-cyan-500 px-10 md:underline decoration-cyan-100">
           {{ aboutDetails.title }}
         </h2>
@@ -52,8 +52,11 @@ import data from '../store/data'
           />
         </svg>
       </div>
-      <div class="bg-neutral-800 collapse-content text-sm max-h-[49vh] overflow-y-auto px-10">
-        <p class="font-bold text-lg text-jleft text-emerald-300" v-html="aboutDetails.descriptif.replace(/\n/g, '<br>')"></p>
+      <div class="collapse-content text-sm max-h-[49vh] overflow-y-auto px-10">
+        <p
+          class="font-bold text-lg text-jleft text-emerald-300"
+          v-html="aboutDetails.descriptif.replace(/\n/g, '<br>')"
+        ></p>
       </div>
     </div>
   </div>

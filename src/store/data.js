@@ -109,7 +109,7 @@ export default {
   about: [
     {
       id: 1,
-      name: 'Investit',
+      name: 'Investi',
     },
     {
       id: 2,
@@ -153,7 +153,7 @@ export default {
       descriptif: `Je dirai que je suis une personne observatrice, calme et téméraire.
         Je suis très rigoureux dans mon travail et j'aime que les choses soient bien faites.
         Je suis aussi quelqu'un qui a de l'humour et aime faire rire les gens. 
-        Quelque soit mes tâches à effectuer, je suis toujours investit et motivé dans ce que je fais.
+        Quelque soit mes tâches à effectuer, je suis toujours investi et motivé dans ce que je fais.
         Enfin, meme si je suis timide, j'aime être entouré de personnes et partager des moments conviviaux.`,
     },
   ],
