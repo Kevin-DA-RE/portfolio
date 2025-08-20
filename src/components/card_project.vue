@@ -22,7 +22,7 @@ const selectedTab = ref('projet')
       v-model="selectedTab"
       value="projet"
     />
-    <div class="tab-content border-base-300 bg-base-100 p-10  animate-fade-in " v-if="selectedTab === 'projet'">
+    <div class="tab-content border-base-300 p-10  animate-fade-in " v-if="selectedTab === 'projet'">
       <div class="flex flex-col justify-center items-center">
         <h1 class="font-bold text-4xl text-cyan-400 mb-6">
           {{ props.project.name }}
@@ -45,7 +45,7 @@ const selectedTab = ref('projet')
       v-model="selectedTab"
       value="langages"
     />
-    <div class="tab-content border-base-300 bg-base-100 p-10  animate-fade-in " v-if="selectedTab === 'langages'">
+    <div class="tab-content border-base-300  p-10  animate-fade-in " v-if="selectedTab === 'langages'">
       <div class="flex flex-row justify-center">
         <div
           class="px-4 py-2"
@@ -69,7 +69,7 @@ const selectedTab = ref('projet')
       value="code"
       v-if="props.project.url_github"
     />
-    <div class="tab-content border-base-300 bg-base-100 p-10  animate-fade-in " v-if="selectedTab === 'code' && props.project.url_github">
+    <div class="tab-content border-base-300p-10  animate-fade-in " v-if="selectedTab === 'code' && props.project.url_github">
       <div class="flex flex-row items-center justify-around">
         <div>
           <img class="size-7" src="/skill/logo_git.png" alt="Git Logo" />
@@ -108,7 +108,7 @@ const selectedTab = ref('projet')
       v-model="selectedTab"
       value="desc"
     />
-    <div class="tab-content border-base-300 bg-base-100 animate-fade-in " v-if="selectedTab === 'desc'">
+    <div class="tab-content border-base-300 animate-fade-in " v-if="selectedTab === 'desc'">
       <li class="list-col p-4" v-for="(desc, index) in props.project.descriptif" :key="index" style="list-style-type: none;">
         <div class="text-md flex flex-row">
           <svg
@@ -132,7 +132,7 @@ const selectedTab = ref('projet')
   </div>
   <div class="max-sm:hidden flex flex-row content-center justify-around w-full h-full">
     <div class="flex flex-col justify-around items-center h-full min-md:h-150">
-      <div class="text-center bg-base-100">
+      <div class="text-center ">
         <h1 class="font-bold text-4xl text-cyan-400">{{ props.project.name }}</h1>
       </div>
       <figure>
@@ -141,7 +141,7 @@ const selectedTab = ref('projet')
     </div>
 
     <div class="max-sm:hidden w-200 m-2 h-100 content-end">
-      <ul class="list bg-base-100 shadow-md">
+      <ul class="list  shadow-md">
         <li class="ml-4 text-xl text-sky-600 font-bold tracking-wide">Langage et Frameworks</li>
         <li class="list-row">
           <div
@@ -157,11 +157,11 @@ const selectedTab = ref('projet')
         </li>
       </ul>
 
-      <ul class="list bg-base-100 shadow-md" v-if="props.project.url_github">
+      <ul class="list shadow-md" v-if="props.project.url_github">
         <li class="ml-4 text-xl text-sky-600 font-bold tracking-wide">Code source / site web</li>
         <li class="list-row">
           <div class="flex flex-row items-center justify-between px-4 py-2 w-50 ">
-            <div>
+            <div >
               <img class="size-7" src="/skill/logo_git.png" alt="Git Logo" />
               <a
                 :href="props.project.url_github"
@@ -178,7 +178,7 @@ const selectedTab = ref('projet')
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-8 stroke-cyan-500 mx-auto"
+                class="size-7 stroke-cyan-500 mx-auto"
               >
                 <path
                   stroke-linecap="round"
@@ -186,13 +186,13 @@ const selectedTab = ref('projet')
                   d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
                 />
               </svg>
-              <p class="font-bold text-cyan-400 text-md mt-2">Site web</p>
+              <p class="font-bold text-cyan-400 text-md mt-2" title="A venir">Site web *</p>
             </div>
           </div>
         </li>
       </ul>
 
-      <ul class="list bg-base-100 shadow-md">
+      <ul class="list shadow-md">
         <li class="ml-4 mt-5 text-xl text-sky-600 font-bold tracking-wide">Descriptif</li>
         <li class="list-col p-4" v-for="(desc, index) in props.project.descriptif" :key="index">
           <div class="text-md flex flex-row">

@@ -7,7 +7,7 @@ import data from '../store/data'
   <!-- Version desktop horizontale -->
   <div class="max-md:hidden carousel w-full h-full animate-fade-in">
     <div
-      class="carousel-item relative w-full"
+      class="carousel-item relative w-full bg-transparente"
       v-for="(project, index) in data.project"
       :key="project.id"
       :id="`slide${index + 1}`"
