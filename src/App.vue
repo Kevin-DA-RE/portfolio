@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
 import Benefits from "./components/Benefits.vue";
 import Features from "./components/Features.vue";
-import Services from "./components/Services.vue";
+import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
 import Sponsors from "./components/Sponsors.vue";
 import Testimonials from "./components/Testimonials.vue";
@@ -21,7 +21,7 @@ import Footer from "./components/Footer.vue";
   <Sponsors />
   <Benefits />
   <Features />
-  <Services />
+  <Project />
   <Experience />
   <Testimonials />
   <Team />
