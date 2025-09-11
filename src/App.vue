@@ -5,7 +5,7 @@ import Benefits from "./components/Benefits.vue";
 import Features from "./components/Features.vue";
 import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
-import Sponsors from "./components/Sponsors.vue";
+import Skill from "./components/Skill.vue";
 import Testimonials from "./components/Testimonials.vue";
 import Team from "./components/Team.vue";
 import Pricing from "./components/Pricing.vue";
@@ -18,7 +18,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <Navbar />
   <Home />
-  <Sponsors />
+  <Skill />
   <Benefits />
   <Features />
   <Project />

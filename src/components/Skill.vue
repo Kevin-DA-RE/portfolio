@@ -70,8 +70,8 @@ const iconMap: Record<
 
 <template>
   <section
-    id="sponsors"
-    class="max-w-[75%] mx-auto pb-24 sm:pb-32"
+    id="skill"
+    class="container py-24 sm:py-32"
   >
     <h2 class="text-lg md:text-xl text-center mb-6">Our Platinum Sponsors</h2>
 
