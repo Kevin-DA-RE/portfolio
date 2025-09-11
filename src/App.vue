@@ -4,7 +4,7 @@ import Home from "./components/Home.vue";
 import Benefits from "./components/Benefits.vue";
 import Features from "./components/Features.vue";
 import Services from "./components/Services.vue";
-import HowItWorks from "./components/HowItWorks.vue";
+import Experience from "./components/Experience.vue";
 import Sponsors from "./components/Sponsors.vue";
 import Testimonials from "./components/Testimonials.vue";
 import Team from "./components/Team.vue";
@@ -22,7 +22,7 @@ import Footer from "./components/Footer.vue";
   <Benefits />
   <Features />
   <Services />
-  <HowItWorks />
+  <Experience />
   <Testimonials />
   <Team />
   <Community />
