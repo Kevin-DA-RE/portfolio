@@ -26,7 +26,7 @@ import { Separator } from "@/components/ui/separator";
 import { ChevronsDown, Menu } from "lucide-vue-next";
 import GithubIcon from "@/icons/GithubIcon.vue";
 import ToggleTheme from "./ToggleTheme.vue";
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue";
 
 interface RouteProps {
   href: string;
@@ -69,7 +69,12 @@ const isOpen = ref<boolean>(false);
     }"
   >
     <a href="#home" class="font-bold text-lg flex items-center">
-<Icon icon="streamline-flex-color:home-2-flat" width="30" height="30" class="mr-2"/>
+      <Icon
+        icon="streamline-flex-color:home-2-flat"
+        width="30"
+        height="30"
+        class="mr-2"
+      />
       Kevin</a
     >
     <!-- Mobile -->
@@ -80,20 +85,10 @@ const isOpen = ref<boolean>(false);
         </SheetTrigger>
 
         <SheetContent
-          side="left"
+          side="right"
           class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card"
         >
           <div>
-            <SheetHeader class="mb-4 ml-4">
-              <SheetTitle class="flex items-center">
-                <a href="/" class="flex items-center">
-                  <ChevronsDown
-                    class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
-                  />
-                  ShadcnVue
-                </a>
-              </SheetTitle>
-            </SheetHeader>
 
             <div class="flex flex-col gap-2">
               <Button
