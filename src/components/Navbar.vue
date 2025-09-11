@@ -69,12 +69,7 @@ const isOpen = ref<boolean>(false);
     }"
   >
     <a href="#home" class="font-bold text-lg flex items-center">
-      <Icon
-        icon="streamline-flex-color:home-2-flat"
-        width="30"
-        height="30"
-        class="mr-2"
-      />
+      <Icon icon="fluent-color:home-48" width="30" height="30" class="mr-2" />
       Kevin</a
     >
     <!-- Mobile -->
@@ -89,7 +84,6 @@ const isOpen = ref<boolean>(false);
           class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card"
         >
           <div>
-
             <div class="flex flex-col gap-2">
               <Button
                 v-for="{ href, label } in routeList"
