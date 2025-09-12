@@ -4,7 +4,6 @@ import Home from "./components/Home.vue";
 import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
 import Skill from "./components/Skill.vue";
-import Team from "./components/Team.vue";
 import Pricing from "./components/Pricing.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
@@ -16,7 +15,6 @@ import Footer from "./components/Footer.vue";
   <Skill />
   <Project />
   <Experience />
-  <Team />
   <Pricing />
   <Contact />
   <Footer />
