@@ -9,7 +9,6 @@ import Testimonials from "./components/Testimonials.vue";
 import Team from "./components/Team.vue";
 import Pricing from "./components/Pricing.vue";
 import Contact from "./components/Contact.vue";
-import FAQ from "./components/FAQ.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -24,6 +23,5 @@ import Footer from "./components/Footer.vue";
   <Team />
   <Pricing />
   <Contact />
-  <FAQ />
   <Footer />
 </template>
