@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Icon } from "@iconify/vue";
 
 interface HowItWorksProps {
+  id: BigInteger;
   badgeTitle: string;
   title: string;
   description: string;
@@ -11,57 +13,48 @@ interface HowItWorksProps {
 
 const HowItWorksList: HowItWorksProps[] = [
   {
-    badgeTitle: "Contribute",
-    title: "Make a Difference with Every Contribution",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "roboto.png",
+    id: 1,
+    badgeTitle: "FimaInfo",
+    period: "2022",
+    title: "Developpeur integrateur web",
+    description: "Developpement de solution web pour plateforme de telephonie",
+    image: "/public/experience/web_developper.png",
   },
   {
-    badgeTitle: "Discover",
-    title: "Create an Impact with Every Choice",
+    id: 2,
+    badgeTitle: "Servius",
+    period: "2021-2022",
+    title: "Developpeur web",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-    image: "runner.png",
+      "Developpement d'interface web de gestion de livraison par facturation de colis",
+    image: "/public/experience/logistic.png",
   },
   {
-    badgeTitle: "Innovate",
-    title: "Make Every Action Count",
+    id: 3,
+    badgeTitle: "Operateur sur centre d'usinage",
+    period: "2013-2020",
+    title: "Monnot, Adhex, JTEKT, Tyco, etc...",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-    image: "pacheco.png",
-  },
-  {
-    badgeTitle: "Collaborate",
-    title: "Tackle this challenge together",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "gamestation.png",
+      "Fabrication de pièces mécaniques à usage industriel, automobile, ferroviaire.",
+    image: "/public/experience/operator_milling_tools.png",
   },
 ];
 </script>
 
 <template>
-  <section
-    id="experience"
-    class="container py-24 sm:py-32"
-  >
-    <div class="text-center mb-8">
+  <section id="experience" class="container py-24 sm:py-32">
+    <div class="text-center mb-2">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-        How It Works
-      </h2>
-
-      <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Step-by-Step Process
+        Experiences
       </h2>
     </div>
 
     <div class="lg:w-[80%] mx-auto relative">
       <div
         v-for="(
-          { badgeTitle, title, description, image }, index
+          { id, badgeTitle, title, description, image, period}, index
         ) in HowItWorksList"
-        :key="title"
+        :key="id"
         :class="[
           'flex mb-8 items-center',
           { ' flex-row-reverse': index % 2 !== 0 },
@@ -69,10 +62,11 @@ const HowItWorksList: HowItWorksProps[] = [
       >
         <Card class="h-full bg-transparent border-0 shadow-none">
           <CardHeader>
-            <div class="pb-4">
+            <div class="pb-4 flex flex-row">
               <Badge>{{ badgeTitle }}</Badge>
+              <Badge variant="info"  class="mr-3">{{ period }}</Badge>
+  
             </div>
-
             <CardTitle>
               {{ title }}
             </CardTitle>

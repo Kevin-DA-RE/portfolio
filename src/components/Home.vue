@@ -3,8 +3,6 @@ import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-vue-next";
-import { Icon } from "@iconify/vue";
 </script>
 
 <template>
