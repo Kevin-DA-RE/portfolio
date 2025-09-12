@@ -30,10 +30,6 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
 
 const routeList: RouteProps[] = [
   {
