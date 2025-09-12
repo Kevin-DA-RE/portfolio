@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
-import Benefits from "./components/Benefits.vue";
 import Features from "./components/Features.vue";
 import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
@@ -19,7 +18,6 @@ import Footer from "./components/Footer.vue";
   <Navbar />
   <Home />
   <Skill />
-  <Benefits />
   <Features />
   <Project />
   <Experience />
