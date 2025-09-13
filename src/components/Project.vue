@@ -12,6 +12,7 @@ interface ServiceProps {
   title: string;
   description: string;
   image: string;
+  stacks: Array;
 }
 
 const serviceList: ServiceProps[] = [

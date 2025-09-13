@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Icon } from "@iconify/vue";
 
 interface HowItWorksProps {
-  id: BigInteger;
   badgeTitle: string;
   title: string;
+  period: string;
   description: string;
   image: string;
 }
