@@ -2,98 +2,57 @@
 import { Marquee } from "@selemondev/vue3-marquee";
 import "@selemondev/vue3-marquee/dist/style.css";
 
-import {
-  Crown,
-  Vegan,
-  Ghost,
-  Puzzle,
-  Squirrel,
-  Cookie,
-  Drama,
-} from "lucide-vue-next";
+import { Icon } from "@iconify/vue";
 
 interface sponsorsProps {
   icon: string;
   name: string;
 }
 
-const sponsors: sponsorsProps[] = [
+const skills: sponsorsProps[] = [
   {
-    icon: "crown",
-    name: "Acmebrand",
+    icon: "devicon:vuejs",
+    name: "Vuejs",
   },
   {
-    icon: "vegan",
-    name: "Acmelogo",
+    icon: "material-icon-theme:laravel",
+    name: "Laravel",
   },
   {
-    icon: "ghost",
-    name: "Acmesponsor",
+    icon: "vscode-icons:file-type-quasar",
+    name: "Quasar",
   },
   {
-    icon: "puzzle",
-    name: "Acmeipsum",
+    icon: "material-icon-theme:nodejs",
+    name: "Nodejs",
   },
   {
-    icon: "squirrel",
-    name: "Acme",
-  },
-  {
-    icon: "cookie",
-    name: "Accmee",
-  },
-  {
-    icon: "drama",
-    name: "Acmetech",
+    icon: "logos:mysql",
+    name: "SQL",
   },
 ];
-
-const iconMap: Record<
-  string,
-  | typeof Crown
-  | typeof Vegan
-  | typeof Ghost
-  | typeof Puzzle
-  | typeof Squirrel
-  | typeof Cookie
-  | typeof Drama
-> = {
-  crown: Crown,
-  vegan: Vegan,
-  ghost: Ghost,
-  puzzle: Puzzle,
-  squirrel: Squirrel,
-  cookie: Cookie,
-  drama: Drama,
-};
 </script>
-
 <template>
-  <section
-    id="skill"
-    class="container py-24 sm:py-32"
-  >
-    <h2 class="text-lg md:text-xl text-center mb-6">Our Platinum Sponsors</h2>
+  <section id="skill" class="container py-24 sm:py-32 w-full h-screen">
+    <h2 class="text-lg text-primary text-center mb-8 tracking-wider">
+      Compétences
+    </h2>
 
-    <div class="mx-auto">
+    <div class="mt-8">
       <Marquee
-        class="gap-[3rem]"
         :pauseOnHover="true"
         :fade="true"
-        innerClassName="gap-[3rem]"
+        innerClassName="flex gap-6 sm:gap-12"
       >
         <div
-          v-for="{ icon, name } in sponsors"
-          :key="name"
+          v-for="skill in skills"
+          :key="skill.name"
+          class="flex flex-col items-center"
         >
-          <div class="flex items-center text-xl md:text-2xl font-medium">
-            <component
-              :is="iconMap[icon]"
-              class="mr-2"
-              stroke-width="3"
-            />
-            {{ name }}
-          </div>
+          <Icon :icon="skill.icon" class="w-16 h-16 sm:w-24 sm:h-24" />
+          <span class="mt-2 text-center text-sm sm:text-base">{{
+            skill.name
+          }}</span>
         </div>
       </Marquee>
     </div>
