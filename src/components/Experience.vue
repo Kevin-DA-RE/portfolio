@@ -18,7 +18,7 @@ const HowItWorksList: HowItWorksProps[] = [
     period: "2022",
     title: "Developpeur integrateur web",
     description: "Developpement de solution web pour plateforme de telephonie",
-    image: "/public/experience/web_developper.png",
+    image: "/experience/web_developper.png",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Developpeur web",
     description:
       "Developpement d'interface web de gestion de livraison par facturation de colis",
-    image: "/public/experience/logistic.png",
+    image: "/experience/logistic.png",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Monnot, Adhex, JTEKT, Tyco, etc...",
     description:
       "Fabrication de pièces mécaniques à usage industriel, automobile, ferroviaire.",
-    image: "/public/experience/operator_milling_tools.png",
+    image: "/experience/operator_milling_tools.png",
   },
 ];
 </script>
