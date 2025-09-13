@@ -95,7 +95,6 @@ const isOpen = ref<boolean>(false);
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
             <Separator class="mb-2" />
 
-            <ToggleTheme />
           </SheetFooter>
         </SheetContent>
       </Sheet>
