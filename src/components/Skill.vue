@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Marquee } from "@selemondev/vue3-marquee";
 import "@selemondev/vue3-marquee/dist/style.css";
 
 import { Icon } from "@iconify/vue";
@@ -33,28 +32,21 @@ const skills: sponsorsProps[] = [
 ];
 </script>
 <template>
-  <section id="skill" class="container py-24 sm:py-32 w-full h-screen">
-    <h2 class="text-lg text-primary text-center mb-8 tracking-wider">
+  <section id="skill" class="container py-24 sm:py-32 w-full min-h-screen">
+    <h2 class="text-lg text-primary text-center mb-12 tracking-wider">
       Compétences
     </h2>
 
-    <div class="mt-8">
-      <Marquee
-        :pauseOnHover="true"
-        :fade="true"
-        innerClassName="flex gap-6 sm:gap-12"
+    <!-- Conteneur flex responsive -->
+    <div class="flex flex-wrap justify-center gap-6">
+      <div
+        v-for="{ icon, name } in skills"
+        :key="name"
+        class="flex flex-col items-center w-28 sm:w-36"
       >
-        <div
-          v-for="skill in skills"
-          :key="skill.name"
-          class="flex flex-col items-center"
-        >
-          <Icon :icon="skill.icon" class="w-16 h-16 sm:w-24 sm:h-24" />
-          <span class="mt-2 text-center text-sm sm:text-base">{{
-            skill.name
-          }}</span>
-        </div>
-      </Marquee>
+        <Icon :icon="icon" class="w-16 h-16 sm:w-24 sm:h-24 mb-2" />
+        <h3>{{ name }}</h3>
+      </div>
     </div>
   </section>
 </template>
