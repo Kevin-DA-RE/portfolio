@@ -20,7 +20,7 @@ const serviceList: ServiceProps[] = [
   {
     title: "DaVinciMedia",
     description: "Bibliotèque multimedia a portée de main !",
-    image: "/public/davincimedia.jpeg",
+    image: "/davincimedia.jpeg",
     stacks: [
       "material-icon-theme:laravel",
       "devicon:vuejs",
@@ -31,7 +31,7 @@ const serviceList: ServiceProps[] = [
     title: "Contact apres travaux",
     description:
       "Créations de fiches clients pour enquêtes de satisfaction via plateforme web",
-    image: "/public/web_developper_project.png",
+    image: "/web_developper_project.png",
     stacks: ["material-icon-theme:nodejs"],
   },
 ];
