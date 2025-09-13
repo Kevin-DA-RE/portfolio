@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 interface HowItWorksProps {
+  id: number;
   badgeTitle: string;
   title: string;
   period: string;
