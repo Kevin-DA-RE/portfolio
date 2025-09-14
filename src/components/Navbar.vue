@@ -124,7 +124,7 @@ const isOpen = ref<boolean>(false);
       <Button as-child size="sm" variant="ghost" aria-label="View on GitHub">
         <a
           aria-label="View on GitHub"
-          href="https://github.com/Kevin-DA-RE/portfolio"
+          href="https://github.com/Kevin-DA-RE"
           target="_blank"
         >
           <GithubIcon class="size-5" />
