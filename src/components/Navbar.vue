@@ -24,12 +24,11 @@ import { Separator } from "@/components/ui/separator";
 import { Menu } from "lucide-vue-next";
 import GithubIcon from "@/icons/GithubIcon.vue";
 import { Icon } from "@iconify/vue";
-
+import ToggleTheme from "./ToggleTheme.vue";
 interface RouteProps {
   href: string;
   label: string;
 }
-
 
 const routeList: RouteProps[] = [
   {
@@ -94,7 +93,7 @@ const isOpen = ref<boolean>(false);
 
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
             <Separator class="mb-2" />
-
+            <ToggleTheme />
           </SheetFooter>
         </SheetContent>
       </Sheet>
