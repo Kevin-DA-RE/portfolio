@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import { Button } from "@/components/ui/button";
 </script>
 
@@ -38,8 +37,9 @@ import { Button } from "@/components/ui/button";
         >
           <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
             <a
-              href="https://drive.google.com/uc?export=download&id=1AHkEgPogfqium81vowb0_bMrc6zPoVM1"
+              href="/CV Kevin DA RE.pdf"
               class="font-semibold hover:text-cyan-400 transition-colors"
+              download
             >
               Télécharger mon CV
             </a>
