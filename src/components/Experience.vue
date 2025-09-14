@@ -8,7 +8,6 @@ interface HowItWorksProps {
   title: string;
   period: string;
   description: string;
-  image: string;
 }
 
 const HowItWorksList: HowItWorksProps[] = [
@@ -17,8 +16,7 @@ const HowItWorksList: HowItWorksProps[] = [
     badgeTitle: "FimaInfo",
     period: "2022",
     title: "Developpeur integrateur web",
-    description: "Developpement de solution web pour plateforme de telephonie",
-    image: "/experience/web_developper.png",
+    description: "Developpement de solution web pour plateforme de telephonie"
   },
   {
     id: 2,
@@ -27,7 +25,6 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Developpeur web",
     description:
       "Developpement d'interface web de gestion de livraison par facturation de colis",
-    image: "/experience/logistic.png",
   },
   {
     id: 3,
@@ -36,7 +33,6 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Monnot, Adhex, JTEKT, Tyco, etc...",
     description:
       "Fabrication de pièces mécaniques à usage industriel, automobile, ferroviaire.",
-    image: "/experience/operator_milling_tools.png",
   },
 ];
 </script>
@@ -77,11 +73,6 @@ const HowItWorksList: HowItWorksProps[] = [
           </CardContent>
         </Card>
 
-        <img
-          :src="image"
-          :alt="`Image describing ${title} `"
-          className="w-[150px]  md:w-[250px] lg:w-[300px] mx-auto -scale-x-100 "
-        />
         <div
           :class="[
             '-z-10 absolute right-0 w-44 h-72  lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl',

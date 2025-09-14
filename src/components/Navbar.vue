@@ -46,7 +46,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#contact",
-    label: "Contact",
+    label: "A propos",
   },
 ];
 
