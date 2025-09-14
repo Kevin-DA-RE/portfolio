@@ -1,201 +1,133 @@
 <script setup lang="ts">
-import { ref, reactive } from "vue";
-import { Button } from "./ui/button";
-import { Card, CardHeader, CardContent, CardFooter } from "./ui/card";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./ui/select";
-import { Textarea } from "./ui/textarea";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Card, CardHeader, CardContent, CardTitle } from "./ui/card";
 
-import { AlertCircle, Building2, Phone, Mail, Clock } from "lucide-vue-next";
+const about = [
+  {
+    id: 1,
+    name: "Investi",
+  },
+  {
+    id: 2,
+    name: "Passioné",
+  },
+  {
+    id: 3,
+    name: "Téméraire",
+  },
+];
 
-interface ContactFormeProps {
-  firstName: string;
-  lastName: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-const contactForm = reactive<ContactFormeProps>({
-  firstName: "",
-  lastName: "",
-  email: "",
-  subject: "Web Development",
-  message: "",
-});
-
-const invalidInputForm = ref<boolean>(false);
-
-const handleSubmit = () => {
-  const { firstName, lastName, email, subject, message } = contactForm;
-  console.log(contactForm);
-
-  const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
-
-  window.location.href = mailToLink;
-};
+const aboutDetails = [
+  {
+    id: 1,
+    title: "Moi en quelques mots",
+    descriptif: [
+      {
+        name: `J'aime apprendre de nouvelles choses et je suis toujours prêt à
+        relever de nouveaux défis`,
+      },
+      {
+        name: `J'ai un esprit curieux et j'aime explorer de nouveaux domaines, que ce soit dans le domaine professionnel ou personnel.
+        J'ai toujours été passionné par l'informatique`,
+      },
+      {
+        name: `Ayant débuté ma carrière dans l'undustrie, j'ai développé des programmes pour fabriquer des pièces mécaniques puis j'ai effectué une reconversion professionnelle dans le développement web afin de concevoir des applications web modernes.`,
+      },
+      {
+        name: `L'idée de développer une ou plusieurs solutions sur un projet afin de répondre à aux besoins clients me motive à me surpasser et à apprendre de nouvelles compétences.`,
+      },
+      {
+        name: `Je suis très investi quand il s'agit de relever des défis pour atteindre un objectif.`,
+      },
+      {
+        name: ` J'aime aussi partager mes connaissances et aider les autres à progresser quand l'occasion se présente.`,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Loisirs et passions",
+    descriptif: [
+      {
+        name: `En dehors du travail, j'aime beaucoup les jeux videos notamment les jeux de simulations.
+        Ces jeux m'aident à me projeter dans des rôles importants et m'apprennent à être stratégique et réfléchi.`,
+      },
+      {
+        name: `J'aime également regarder des séries et des films et j'ai meme un faible pour les films d'horreur. `,
+      },
+      {
+        name: `J'écoute beaucoup de musique instumentale, cela m'aide à mévader et à me concentrer.`,
+      },
+      {
+        name: `Etant père de famille, j'apprécie également passer du temps avec mon fils et ma femme. `,
+      },
+      {
+        name: `J'aime beaucoup montrer à mon fils de nouveaux jeux et l'aider à progresser.`,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Caractère",
+    descriptif: [
+      {
+        name: `Je dirai que je suis une personne observatrice, calme et téméraire.
+        Je suis très rigoureux dans mon travail et j'aime que les choses soient bien faites.`,
+      },
+      {
+        name: `Je suis aussi quelqu'un qui a de l'humour et aime faire rire les gens. `,
+      },
+      {
+        name: `J'écoute beaucoup de musique instumentale, cela m'aide à mévader et à me concentrer.`,
+      },
+      {
+        name: `Quelque soit mes tâches à effectuer, je suis toujours investi et motivé dans ce que je fais.
+        Enfin, meme si je suis timide, j'aime être entouré de personnes et partager des moments conviviaux.`,
+      }
+    ],
+  },
+];
 </script>
 
 <template>
-  <section
-    id="contact"
-    class="container py-24 sm:py-32"
-  >
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <div class="mb-4">
-          <h2 class="text-lg text-primary mb-2 tracking-wider">Contact</h2>
+  <section id="contact" class="container py-24 sm:py-32">
+    <section class="justify-center w-[80vw]">
+      <div class="">
+        <div class="mb-4 text-center">
+          <h2 class="text-lg text-primary mb-2 tracking-wider">
+            A propos de moi
+          </h2>
 
-          <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+          <h2 class="text-3xl md:text-4xl font-bold">Les grandes lignes</h2>
         </div>
-        <p class="mb-8 text-muted-foreground lg:w-5/6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          ipsam sint enim exercitationem ex autem corrupti quas tenetur
-        </p>
-
-        <div class="flex flex-col gap-4">
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Building2 />
-              <div class="font-bold">Find Us</div>
-            </div>
-
-            <div>742 Evergreen Terrace, Springfield, IL 62704</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Phone />
-              <div class="font-bold">Call Us</div>
-            </div>
-
-            <div>+1 (619) 123-4567</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Mail />
-              <div class="font-bold">Mail Us</div>
-            </div>
-
-            <div>leomirandadev@gmail.com</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2">
-              <Clock />
-              <div class="font-bold">Visit Us</div>
-            </div>
-
-            <div>
-              <div>Monday - Friday</div>
-              <div>8AM - 4PM</div>
-            </div>
-          </div>
+        <div
+          v-for="(about, index) in about"
+          :key="about.id"
+          class="flex m-2 px-8"
+          :class="{
+            'items-start justify-start': index === 0,
+            'items-center justify-center': index === 1,
+            'items-end justify-end': index === 2,
+          }"
+        >
+          <h1
+            class="text-4xl font-extrabold bg-gradient-to-r from-primary via-indigo-500 to-primary bg-clip-text text-transparent"
+          >
+            {{ about.name }}
+          </h1>
+        </div>
+        <div v-for="{ title, descriptif } in aboutDetails" :key="title">
+          <Card class="bg-muted/60 dark:bg-card h-full relative">
+            <CardHeader>
+              <CardTitle>{{ title }}</CardTitle>
+              <CardDescription>
+                <ul v-for="desc in descriptif" style="list-style-type: disc">
+                  <li class="mt-2">{{ desc.name }}</li>
+                </ul>
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </div>
       </div>
-
-      <!-- form -->
-      <Card class="bg-muted/60 dark:bg-card">
-        <CardHeader class="text-primary text-2xl"> </CardHeader>
-        <CardContent>
-          <form
-            @submit.prevent="handleSubmit"
-            class="grid gap-4"
-          >
-            <div class="flex flex-col md:flex-row gap-8">
-              <div class="flex flex-col w-full gap-1.5">
-                <Label for="first-name">First Name</Label>
-                <Input
-                  id="first-name"
-                  type="text"
-                  placeholder="Leopoldo"
-                  v-model="contactForm.firstName"
-                />
-              </div>
-
-              <div class="flex flex-col w-full gap-1.5">
-                <Label for="last-name">Last Name</Label>
-                <Input
-                  id="last-name"
-                  type="text"
-                  placeholder="Miranda"
-                  v-model="contactForm.lastName"
-                />
-              </div>
-            </div>
-
-            <div class="flex flex-col gap-1.5">
-              <Label for="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="leomirandadev@gmail.com"
-                v-model="contactForm.email"
-              />
-            </div>
-
-            <div class="flex flex-col gap-1.5">
-              <Label for="subject">Subject</Label>
-
-              <Select v-model="contactForm.subject">
-                <SelectTrigger>
-                  <SelectValue placeholder="Select a subject" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectItem value="Web Development">
-                      Web Development
-                    </SelectItem>
-                    <SelectItem value="Mobile Development">
-                      Mobile Development
-                    </SelectItem>
-                    <SelectItem value="Figma Design"> Figma Design </SelectItem>
-                    <SelectItem value="REST API "> REST API </SelectItem>
-                    <SelectItem value="FullStack Project">
-                      FullStack Project
-                    </SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div class="flex flex-col gap-1.5">
-              <Label for="message">Message</Label>
-              <Textarea
-                id="message"
-                placeholder="Your message..."
-                rows="5"
-                v-model="contactForm.message"
-              />
-            </div>
-
-            <Alert
-              v-if="invalidInputForm"
-              variant="destructive"
-            >
-              <AlertCircle class="w-4 h-4" />
-              <AlertTitle>Error</AlertTitle>
-              <AlertDescription>
-                There is an error in the form. Please check your input.
-              </AlertDescription>
-            </Alert>
-
-            <Button class="mt-4">Send message</Button>
-          </form>
-        </CardContent>
-
-        <CardFooter></CardFooter>
-      </Card>
     </section>
   </section>
 </template>
