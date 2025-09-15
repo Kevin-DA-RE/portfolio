@@ -27,7 +27,7 @@ const contacts = [
 
 <template>
   <footer id="footer" class="container">
-    <Card class="bg-muted/60 dark:bg-card relative  w-[80vw] mx-auto m-b2">
+    <Card class="bg-muted/60 dark:bg-card relative mb-2">
       <CardHeader>
         <CardTitle class="mb-2">Coordonnées</CardTitle>
         <CardDescription class="flex flex-col md:flex-row justify-around space-y-2">

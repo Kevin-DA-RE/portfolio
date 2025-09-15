@@ -90,8 +90,6 @@ const aboutDetails = [
 
 <template>
   <section id="contact" class="container py-24 sm:py-32">
-    <section class="justify-center w-[80vw]">
-      <div class="">
         <div class="mb-4 text-center">
           <h2 class="text-lg text-primary mb-2 tracking-wider">
             A propos de moi
@@ -127,7 +125,5 @@ const aboutDetails = [
             </CardHeader>
           </Card>
         </div>
-      </div>
-    </section>
   </section>
 </template>
