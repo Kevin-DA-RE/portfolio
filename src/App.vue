@@ -5,6 +5,7 @@ import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
 import Skill from "./components/Skill.vue";
 import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import Contact from "./components/Contact.vue";
   <Project />
   <Skill />
   <Contact />
+  <Footer />
 </template>
