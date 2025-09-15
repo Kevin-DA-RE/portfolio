@@ -115,7 +115,7 @@ const aboutDetails = [
             {{ about.name }}
           </h1>
         </div>
-        <div v-for="{ title, descriptif } in aboutDetails" :key="title">
+        <div v-for="{ title, descriptif } in aboutDetails" :key="title" class="my-5">
           <Card class="bg-muted/60 dark:bg-card h-full relative">
             <CardHeader>
               <CardTitle>{{ title }}</CardTitle>
