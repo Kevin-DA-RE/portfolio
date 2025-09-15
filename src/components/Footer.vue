@@ -27,11 +27,11 @@ const contacts = [
 
 <template>
   <footer id="footer" class="container">
-    <Card class="bg-muted/60 dark:bg-card relative  w-[80vw] mx-auto">
+    <Card class="bg-muted/60 dark:bg-card relative  w-[80vw] mx-auto m-b2">
       <CardHeader>
         <CardTitle class="mb-2">Coordonnées</CardTitle>
-        <CardDescription class="flex flex-row justify-around">
-          <div class="mx-2 flex" v-for="contact in contacts" :key="contact.id" >
+        <CardDescription class="flex flex-col md:flex-row justify-around space-y-2">
+          <div class="mx-2 flex flex-col md:flex-row items-center" v-for="contact in contacts" :key="contact.id" >
             <Icon :icon="contact.icon" width="24" height="24" class="mr-2" />
             <h3>
               <template v-if="contact.name === 'mail'">
@@ -41,7 +41,7 @@ const contacts = [
               </template>
                <template v-else-if="contact.name === 'linkedin'">
                 <a :href="contact.value" class="text-blue-500 hover:underline" target="_blank">
-                 Linkedin
+                 Kevin DA RE
                 </a>
               </template>
               <template v-else>
