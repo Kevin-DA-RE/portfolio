@@ -100,7 +100,7 @@ const aboutDetails = [
         <div
           v-for="(about, index) in about"
           :key="about.id"
-          class="flex m-2 px-8"
+          class="flex m-2 px-8 lg:w-[80%] mx-auto "
           :class="{
             'items-start justify-start': index === 0,
             'items-center justify-center': index === 1,
@@ -114,7 +114,7 @@ const aboutDetails = [
           </h1>
         </div>
         <div v-for="{ title, descriptif } in aboutDetails" :key="title" class="my-5">
-          <Card class="bg-muted/60 dark:bg-card h-full relative">
+          <Card class="bg-muted/60 dark:bg-card h-full relative lg:w-[80%] mx-auto ">
             <CardHeader>
               <CardTitle>{{ title }}</CardTitle>
               <CardDescription>

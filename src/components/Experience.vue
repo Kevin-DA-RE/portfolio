@@ -45,42 +45,42 @@ const HowItWorksList: HowItWorksProps[] = [
       </h2>
     </div>
 
-    <div class="lg:w-[80%] mx-auto relative">
-      <div
-        v-for="(
-          { id, badgeTitle, title, description,period}, index
-        ) in HowItWorksList"
-        :key="id"
-        :class="[
-          'flex mb-8 items-center',
-          { ' flex-row-reverse': index % 2 !== 0 },
-        ]"
-      >
+    <div class="lg:w-[80%] mx-auto relative flex flex-col">
+      <div v-for="(
+{ id, badgeTitle, title, description, period }, index
+        ) in HowItWorksList" :key="id" :class="[
+          'flex mb-8',
+          { 'flex-row-reverse items-end': index % 2 !== 0 },
+        ]">
         <Card class="h-full bg-transparent border-0 shadow-none">
           <CardHeader>
-            <div class="pb-4 flex flex-row">
+            <div :class="['pb-4 flex md:flex-row',
+              { 'md:flex-row md:justify-end': index % 2 !== 0 },
+            ]">
               <Badge>{{ badgeTitle }}</Badge>
-              <Badge variant="info"  class="mr-3">{{ period }}</Badge>
-  
+              <Badge variant="info" class="mr-3">{{ period }}</Badge>
             </div>
-            <CardTitle>
+            <CardTitle :class="[
+              'flex flex-row',
+              {' md:justify-end': index % 2 !== 0 },
+            ]">
               {{ title }}
             </CardTitle>
           </CardHeader>
 
-          <CardContent class="text-muted-foreground w-[80%]">
+          <CardContent :class="['text-muted-foreground text-start',
+           { 'md:text-end': index % 2 !== 0 },
+          ] ">
             {{ description }}
           </CardContent>
         </Card>
 
-        <div
-          :class="[
-            '-z-10 absolute right-0 w-44 h-72  lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl',
-            {
-              'left-0': index % 2 !== 0,
-            },
-          ]"
-        ></div>
+        <div :class="[
+          '-z-10 absolute right-0 w-44 h-72  lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl',
+          {
+            'left-0': index % 2 !== 0,
+          },
+        ]"></div>
       </div>
     </div>
   </section>
