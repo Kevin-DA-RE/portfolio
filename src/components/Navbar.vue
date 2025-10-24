@@ -33,7 +33,7 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "#experience",
-    label: "Experiences",
+    label: "Expériences",
   },
   {
     href: "#project",
