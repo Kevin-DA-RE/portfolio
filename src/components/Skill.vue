@@ -58,7 +58,7 @@ const skills: sponsorsProps[] = [
       <div
         v-for="{ icon, name } in skills"
         :key="name"
-        class="flex flex-col items-center w-28 sm:w-36"
+        class="flex flex-col items-center w-28 sm:w-36 sm:px-5"
       >
         <Icon :icon="icon" class="w-16 h-16 sm:w-24 sm:h-24 mb-2" />
         <h3>{{ name }}</h3>
