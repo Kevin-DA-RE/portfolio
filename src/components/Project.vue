@@ -7,25 +7,25 @@ import {
 } from "@/components/ui/card";
 import { Icon } from "@iconify/vue";
 
-
 interface ServiceProps {
   title: string;
   description: string;
   image: string;
   stacks: Array<string>;
-
+  url?: string;
 }
 
 const serviceList: ServiceProps[] = [
   {
     title: "DaVinciMedia",
-    description: "Bibliotèque multimedia a portée de main !",
+    description: "Bibliotèque multimedia a portée de main",
     image: "/davincimedia.jpeg",
     stacks: [
       "material-icon-theme:laravel",
       "devicon:vuejs",
       "vscode-icons:file-type-quasar",
     ],
+    url: "https://thedavincimedia.alwaysdata.net/",
   },
   {
     title: "Contact apres travaux",
@@ -49,7 +49,7 @@ const serviceList: ServiceProps[] = [
       class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto"
     >
       <div
-        v-for="{ title, description, image, stacks } in serviceList"
+        v-for="{ title, description, image, stacks, url } in serviceList"
         :key="title"
       >
         <Card class="bg-muted/60 dark:bg-card h-full relative">
@@ -73,9 +73,21 @@ const serviceList: ServiceProps[] = [
               </div>
             </h2>
             <CardDescription>{{ description }}</CardDescription>
+            <CardDescription class="mt-2" v-if="url">
+              <a
+                :href="url"
+                target="_blank"
+                class="cursor-pointer text-blue-500 hover:underline transition"
+              >
+                <Icon
+                  icon="streamline-plump-color:web"
+                  width="30"
+                  height="30"
+                />Site web
+              </a>
+            </CardDescription>
           </CardHeader>
         </Card>
-
       </div>
     </div>
   </section>
