@@ -29,6 +29,22 @@ const skills: sponsorsProps[] = [
     icon: "logos:mysql",
     name: "SQL",
   },
+  {
+    icon: "vscode-icons:file-type-html",
+    name: "HTML",
+  },
+  {
+    icon: "skill-icons:javascript",
+    name: "JavaScrit",
+  },
+  {
+    icon: "material-icon-theme:tailwindcss",
+    name: "Tailwind",
+  },
+  {
+    icon: "material-icon-theme:git",
+    name: "Git",
+  },
 ];
 </script>
 <template>
