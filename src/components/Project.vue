@@ -13,6 +13,7 @@ interface ServiceProps {
   image: string;
   stacks: Array<string>;
   url?: string;
+  git?: string;
 }
 
 const serviceList: ServiceProps[] = [
@@ -26,6 +27,7 @@ const serviceList: ServiceProps[] = [
       "vscode-icons:file-type-quasar",
     ],
     url: "https://thedavincimedia.alwaysdata.net/",
+    git: "https://github.com/Kevin-DA-RE/davincimedia",
   },
   {
     title: "Contact apres travaux",
@@ -49,7 +51,7 @@ const serviceList: ServiceProps[] = [
       class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto"
     >
       <div
-        v-for="{ title, description, image, stacks, url } in serviceList"
+        v-for="{ title, description, image, stacks, url, git } in serviceList"
         :key="title"
       >
         <Card class="bg-muted/60 dark:bg-card h-full relative">
@@ -84,6 +86,19 @@ const serviceList: ServiceProps[] = [
                   width="30"
                   height="30"
                 />Site web
+              </a>
+            </CardDescription>
+            <CardDescription class="mt-2" v-if="git">
+              <a
+                :href="git"
+                target="_blank"
+                class="cursor-pointer text-blue-500 hover:underline transition"
+              >
+                <Icon
+                  icon="qlementine-icons:github-16"
+                  width="30"
+                  height="30"
+                />Depôt Git
               </a>
             </CardDescription>
           </CardHeader>
