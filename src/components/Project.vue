@@ -19,7 +19,7 @@ interface ServiceProps {
 const serviceList: ServiceProps[] = [
   {
     title: "DaVinciMedia",
-    description: "Bibliotèque multimedia a portée de main",
+    description: "Bibliothèque multimédia à portée de main",
     image: "/davincimedia.jpeg",
     stacks: [
       "material-icon-theme:laravel",
@@ -30,7 +30,7 @@ const serviceList: ServiceProps[] = [
     git: "https://github.com/Kevin-DA-RE/davincimedia",
   },
   {
-    title: "Contact apres travaux",
+    title: "Contact après travaux",
     description:
       "Créations de fiches clients pour enquêtes de satisfaction via plateforme web",
     image: "/web_developper_project.png",
@@ -98,7 +98,7 @@ const serviceList: ServiceProps[] = [
                   icon="qlementine-icons:github-16"
                   width="30"
                   height="30"
-                />Depôt Git
+                />Dépôt Git
               </a>
             </CardDescription>
           </CardHeader>

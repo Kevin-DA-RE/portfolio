@@ -29,7 +29,7 @@ import { Button } from "@/components/ui/button";
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
           Passionné par l'univers du développement web,<br />
-          laissez moi vous présenter mes projets et bien plus encore !
+          laissez-moi vous présenter mes projets et bien plus encore !
         </p>
 
         <div

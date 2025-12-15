@@ -10,20 +10,12 @@ interface sponsorsProps {
 
 const skills: sponsorsProps[] = [
   {
-    icon: "devicon:vuejs",
-    name: "Vuejs",
-  },
-  {
     icon: "material-icon-theme:laravel",
     name: "Laravel",
   },
   {
     icon: "vscode-icons:file-type-quasar",
     name: "Quasar",
-  },
-  {
-    icon: "material-icon-theme:nodejs",
-    name: "Nodejs",
   },
   {
     icon: "logos:mysql",
@@ -34,8 +26,16 @@ const skills: sponsorsProps[] = [
     name: "HTML",
   },
   {
+    icon: "devicon:vuejs",
+    name: "Vue.js",
+  },
+  {
+    icon: "material-icon-theme:nodejs",
+    name: "Node.js",
+  },
+  {
     icon: "skill-icons:javascript",
-    name: "JavaScrit",
+    name: "JavaScript",
   },
   {
     icon: "material-icon-theme:tailwindcss",

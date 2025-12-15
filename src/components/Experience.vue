@@ -21,35 +21,35 @@ const HowItWorksList: HowItWorksProps[] = [
     description: "Développement de solutions web pour plateforme de téléphonie",
     tasks: [
       "Support technique pour plateforme web callcenter.",
-      "Développement de solutions en Javascript et SQL sur les scripts de la plateforme de production.",
-      "Reccueil du besoin client.",
-      "Développement d'application API Nodejs pour traitement des fichiers clients.",
+      "Développement de solutions en JavaScript et SQL sur les scripts de la plateforme de production.",
+      "Recueil du besoin client.",
+      "Développement d'application API Node.js pour traitement des fichiers clients.",
     ],
-    stack: "HTML, JavaScript, MSSQL, Git, Nodejs",
+    stack: "HTML, JavaScript, MSSQL, Git, Node.js",
   },
   {
     id: 2,
     badgeTitle: "Servius",
     period: "2021-2022",
-    title: "Développeur front end Vuejs",
+    title: "Développeur front end Vue.js",
     description:
       "Développement d’une interface web pour la gestion des livraisons et la facturation des colis",
     tasks: [
-      "Développement du dashboard de l'interface utilisateur en Vuejs.",
+      "Développement du dashboard de l'interface utilisateur en Vue.js.",
       "Navigation entre les serveurs via le terminal Unix pour sauvegarder les projets en complément de Git.",
     ],
-    stack: "Vuesjs, Unix, Git",
+    stack: "Vue.js, Unix, Git",
   },
   {
     id: 3,
-    badgeTitle: "Operateur sur centre d'usinage",
+    badgeTitle: "Opérateur sur centre d'usinage",
     period: "2013-2020",
     title: "Monnot, Adhex, JTEKT, Tyco, etc...",
     description:
       "Fabrication de pièces mécaniques à usage industriel, automobile, ferroviaire.",
     tasks: [
       "Analyse plan pour usinage.",
-      "Paramétrage des machines et de outils.",
+      "Paramétrage des machines et des outils.",
       "Maintenance de niveau 1.",
       "Contrôle qualité des pièces avant livraison client.",
     ],
@@ -108,18 +108,19 @@ const HowItWorksList: HowItWorksProps[] = [
               { 'md:text-end': index % 2 !== 0 },
             ]"
           >
-          <h3 class="text-amber-500">Taches:</h3>
+            <h3 class="text-amber-500">Tâches:</h3>
             <ul v-for="task in tasks">
               <li>{{ task }}</li>
             </ul>
           </CardContent>
-          <CardContent v-if="stack"
+          <CardContent
+            v-if="stack"
             :class="[
               'text-muted-foreground text-start',
               { 'md:text-end': index % 2 !== 0 },
             ]"
           >
-          <h3 class="text-amber-500">Technos:</h3>
+            <h3 class="text-amber-500">Technos:</h3>
             {{ stack }}
           </CardContent>
         </Card>

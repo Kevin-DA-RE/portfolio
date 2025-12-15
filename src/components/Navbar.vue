@@ -41,11 +41,11 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#skill",
-    label: "Competences",
+    label: "Compétences",
   },
   {
     href: "#contact",
-    label: "A propos",
+    label: "À propos",
   },
 ];
 
