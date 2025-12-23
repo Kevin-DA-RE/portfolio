@@ -15,7 +15,7 @@ interface HowItWorksProps {
 const HowItWorksList: HowItWorksProps[] = [
   {
     id: 1,
-    badgeTitle: "FimaInfo",
+    badgeTitle: "Centre Relations Clients",
     period: "2022",
     title: "Développeur intégrateur web",
     description: "Développement de solutions web pour plateforme de téléphonie",
