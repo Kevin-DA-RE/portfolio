@@ -54,7 +54,7 @@ const skills: sponsorsProps[] = [
     </h2>
 
     <!-- Conteneur flex responsive -->
-    <div class="flex flex-wrap justify-center gap-6">
+    <div class="flex flex-wrap justify-center gap-6 w-[80vw] mx-auto">
       <div
         v-for="{ icon, name } in skills"
         :key="name"

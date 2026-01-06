@@ -4,49 +4,37 @@ import { Badge } from "@/components/ui/badge";
 
 interface HowItWorksProps {
   id: number;
-  badgeTitle: string;
   title: string;
   period: string;
-  description: string;
   tasks: Array<string>;
-  stack?: string;
 }
 
 const HowItWorksList: HowItWorksProps[] = [
   {
     id: 1,
-    badgeTitle: "Centre Relations Clients",
-    period: "2022",
-    title: "Développeur intégrateur web",
-    description: "Développement de solutions web pour plateforme de téléphonie",
+    period: "2022-2025",
+    title: "Développeur web",
     tasks: [
-      "Support technique pour plateforme web callcenter.",
-      "Développement de solutions en JavaScript et SQL sur les scripts de la plateforme de production.",
-      "Recueil du besoin client.",
-      "Développement d'application API Node.js pour traitement des fichiers clients.",
-    ],
-    stack: "HTML, JavaScript, MSSQL, Git, Node.js",
+      "Analyse et recueil des besoins clients",
+      "Développement d’interfaces utilisateur",
+      "Développement api pour optimisation des traitements de données commerciales",
+      "Support technique et résolution d’incidents",
+      "Documentation de projets",
+    ]
   },
   {
     id: 2,
-    badgeTitle: "Servius",
     period: "2021-2022",
     title: "Développeur front end Vue.js",
-    description:
-      "Développement d’une interface web pour la gestion des livraisons et la facturation des colis",
     tasks: [
       "Développement du dashboard de l'interface utilisateur en Vue.js.",
       "Navigation entre les serveurs via le terminal Unix pour sauvegarder les projets en complément de Git.",
-    ],
-    stack: "Vue.js, Unix, Git",
+    ]
   },
   {
     id: 3,
-    badgeTitle: "Opérateur sur centre d'usinage",
     period: "2013-2020",
-    title: "Monnot, Adhex, JTEKT, Tyco, etc...",
-    description:
-      "Fabrication de pièces mécaniques à usage industriel, automobile, ferroviaire.",
+    title: "Opérateur sur centres d'usinage",
     tasks: [
       "Analyse plan pour usinage.",
       "Paramétrage des machines et des outils.",
@@ -68,7 +56,7 @@ const HowItWorksList: HowItWorksProps[] = [
     <div class="lg:w-[80%] mx-auto relative flex flex-col">
       <div
         v-for="(
-          { id, badgeTitle, title, description, period, stack, tasks }, index
+          { id, title, period, tasks }, index
         ) in HowItWorksList"
         :key="id"
         :class="[
@@ -84,7 +72,6 @@ const HowItWorksList: HowItWorksProps[] = [
                 { 'md:flex-row md:justify-end': index % 2 !== 0 },
               ]"
             >
-              <Badge>{{ badgeTitle }}</Badge>
               <Badge variant="info" class="mr-3">{{ period }}</Badge>
             </div>
             <CardTitle
@@ -100,28 +87,10 @@ const HowItWorksList: HowItWorksProps[] = [
               { 'md:text-end': index % 2 !== 0 },
             ]"
           >
-            {{ description }}
-          </CardContent>
-          <CardContent
-            :class="[
-              'text-muted-foreground text-start',
-              { 'md:text-end': index % 2 !== 0 },
-            ]"
-          >
             <h3 class="text-amber-500">Tâches:</h3>
             <ul v-for="task in tasks">
               <li>{{ task }}</li>
             </ul>
-          </CardContent>
-          <CardContent
-            v-if="stack"
-            :class="[
-              'text-muted-foreground text-start',
-              { 'md:text-end': index % 2 !== 0 },
-            ]"
-          >
-            <h3 class="text-amber-500">Technos:</h3>
-            {{ stack }}
           </CardContent>
         </Card>
         <div

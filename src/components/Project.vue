@@ -32,7 +32,7 @@ const serviceList: ServiceProps[] = [
   {
     title: "Contact après travaux",
     description:
-      "Créations de fiches clients pour enquêtes de satisfaction via plateforme web",
+      "API de suivi qualité des passages clients auprès des concessions automobiles",
     image: "/web_developper_project.png",
     stacks: ["material-icon-theme:nodejs"],
   },
@@ -40,15 +40,15 @@ const serviceList: ServiceProps[] = [
 </script>
 
 <template>
-  <section id="project" class="container py-24 sm:py-32">
-    <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
+  <section id="project" class="container py-24 sm:py-32 ">
+    <h2 class="text-lg text-primary text-center mb-5 tracking-wider">
       Projets
     </h2>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
     <div
-      class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto"
+      class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto mb-20"
     >
       <div
         v-for="{ title, description, image, stacks, url, git } in serviceList"
@@ -59,7 +59,7 @@ const serviceList: ServiceProps[] = [
             <img
               :src="image"
               :alt="`Image describing ${title} `"
-              class="w-[150px] md:w-[250px] lg:w-[300px] mx-auto mb-3"
+              class="w-[150px] md:w-[250px] lg:w-[200px] mx-auto mb-3"
             />
             <CardTitle>{{ title }}</CardTitle>
             <h2>
