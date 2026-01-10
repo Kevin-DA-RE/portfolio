@@ -18,6 +18,18 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
+    title: "EpiCloud",
+    description:
+      "Application médicale conçue pour faciliter le suivi des crises d’épilepsie et l’évolution des traitements.",
+    image: "/logo_epicloud.png",
+    stacks: [
+      "material-icon-theme:laravel",
+      "devicon:vuejs",
+      "simple-icons:shadcnui",
+    ],
+    git: "https://github.com/Kevin-DA-RE/epicloud",
+  },
+  {
     title: "DaVinciMedia",
     description: "Bibliothèque multimédia à portée de main",
     image: "/davincimedia.jpeg",
@@ -40,7 +52,7 @@ const serviceList: ServiceProps[] = [
 </script>
 
 <template>
-  <section id="project" class="container py-24 sm:py-32 ">
+  <section id="project" class="container py-24 sm:py-32">
     <h2 class="text-lg text-primary text-center mb-5 tracking-wider">
       Projets
     </h2>
@@ -63,7 +75,7 @@ const serviceList: ServiceProps[] = [
             />
             <CardTitle>{{ title }}</CardTitle>
             <h2>
-              Technos:
+              Stacks:
               <div v-if="stacks" class="flex flex-row my-2 space-x-2">
                 <Icon
                   v-for="stack in stacks"
